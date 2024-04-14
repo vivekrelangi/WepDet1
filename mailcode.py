@@ -45,7 +45,7 @@ smtp_server = "smtp.gmail.com"
 email_from = "wepdet@gmail.com"
 email_to_list = ["wepdet@gmail.com"]#we can add any number of receipents in the list
 
-pswd = "qywd szyo upne ymsd"
+pswd = "your password"
 
 subject = "Weapon Detected"
 
