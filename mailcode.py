@@ -7,7 +7,7 @@ smtp_server = "smtp.gmail.com"
 email_from = "wepdet@gmail.com"
 email_to = "wepdet@gmail.com"
 
-pswd = "qywd szyo upne ymsd"
+pswd = "your password"
 
 message = "Mail code"
 
