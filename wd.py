@@ -17,7 +17,7 @@ import ssl
 import smtplib
 
 email_sender = 'wepdet@gmail.com'
-email_password = 'qywd szyo upne ymsd'
+email_password = 'your password'
 
 email_receiver = 'tewagas520@iliken.com'
 
