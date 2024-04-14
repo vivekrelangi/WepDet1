@@ -66,7 +66,7 @@ def send_emails(email_to_list,fn):
 
         msg.attach(MIMEText(body, 'plain'))
 
-        filename = f"/home/ghostprime/FinalYearProject/Weapon-Detection-with-yolov3-master/weapon_detection/savedimages/{fn}"
+        filename = f"/path/{fn}"
 
         attachment = open(filename, 'rb')
 
