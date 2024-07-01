@@ -1,1 +1,0 @@
-#copy of wd.py file
