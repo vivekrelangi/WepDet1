@@ -4,8 +4,8 @@ import ssl
 smtp_port = 587
 smtp_server = "smtp.gmail.com"
 
-email_from = "wepdet@gmail.com"
-email_to = "wepdet@gmail.com"
+email_from = "yourmail@abc.com"
+email_to = "yourmail@abc.com"
 
 pswd = "your password"
 
