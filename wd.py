@@ -7,19 +7,19 @@ from mailcode import email_to_list
 """import smtplib
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
-server.login('wepdet@gmail.com','We@#demo0987')
+server.login('yourmail@abc.com','password')
 
-server.sendmail('wepdet@gmail.com','wepdet@gmail.com','Mail sent from python code')
+server.sendmail('yourmail@abc.com','yourmail@abc.com','Mail sent from python code')
 print('Mail sent')"""
 """from email.message import EmailMessage
 #from maildm import password
 import ssl
 import smtplib
 
-email_sender = 'wepdet@gmail.com'
+email_sender = 'yourmail@abc.com'
 email_password = 'your password'
 
-email_receiver = 'tewagas520@iliken.com'
+email_receiver = 'yourmail@abc.com'
 
 subject = "Mail from python code"
 body=""""Wep det msg.""""
@@ -36,8 +36,7 @@ context = ssl.create_default_context()
 #mail code
 
 # Load Yolo
-# Download weight file(yolov3_training_2000.weights) from this link :- https://drive.google.com/file/d/10uJEsUpQI3EmD98iwrwzbD4e19Ps-LHZ/view?usp=sharing
-net = cv2.dnn.readNet("yolov3_training_2000.weights", "yolov3_testing.cfg")
+net = cv2.dnn.readNet("trainedfile.weights", "configfile.cfg")
 classes = ["Weapon"]
 # with open("coco.names", "r") as f:
 #     classes = [line.strip() for line in f.readlines()]
@@ -49,10 +48,8 @@ colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
 
 # Loading image
-# img = cv2.imread("room_ser.jpg")
-# img = cv2.resize(img, None, fx=0.4, fy=0.4)
 
-# Enter file name for example "ak47.mp4" or press "Enter" to start webcam
+# Enter file name for example "abc.mp4" or press "Enter" to start webcam
 def value():
     val = input("Enter file name or press enter to start webcam : \n")
     if val == "":
@@ -70,8 +67,6 @@ while True:
         print("Error: Failed to read a frame from the video source.")
         break
     height, width, channels = img.shape
-    # width = 512
-    # height = 512
 
     # Detecting objects
     blob = cv2.dnn.blobFromImage(img, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
